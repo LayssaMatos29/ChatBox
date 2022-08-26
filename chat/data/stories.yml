@@ -2,31 +2,44 @@ version: "3.1"
 
 stories:
 
-- story: happy path
+- story: feliz path
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_so
-  - action: utter_mood_so
-  - intent: mood_great
-  - action: utter_happy
+  - intent: saudar
+  - action: utter_saudar
+  - intent: humor
+  - action: utter_humor
+  - intent: humor_ótimo
+  - action: utter_feliz
 
 - story: sad path 1
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - intent: saudar
+  - action: utter_saudar
+  - intent: humor_infeliz
+  - action: utter_alegrar
+  - action: utter_isso_ajudou
+  - intent: afirmar
+  - action: utter_feliz
 
 - story: sad path 2
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
+  - intent: saudar
+  - action: utter_saudar
+  - intent: humor_infeliz
+  - action: utter_alegrar
+  - action: utter_isso_ajudou
+  - intent: negar
   - action: utter_goodbye
+
+- story: falar da boss
+  steps:
+  - intent: o_que_e_boss 
+  - action: utter_boss_apresenta
+  - action: utter_talk_like_a_boss
+
+- story: falar da boss com conversa
+  steps:
+  - intent: saudar
+  - action: utter_saudar
+  - intent: o_que_e_boss 
+  - action: utter_boss_apresenta

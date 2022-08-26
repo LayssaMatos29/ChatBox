@@ -1,37 +1,45 @@
 version: "3.1"
 
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-  - mood_so
+  - saudar
+  - adeus
+  - afirmar
+  - negar
+  - humor_ótimo
+  - humor_infeliz
+  - desafio_do_bot
+  - humor
+  - o_que_e_boss
 
 responses:
-  utter_mood_so:
+  utter_humor:
     - text: "Voce precisa se decidir !!!!!!!!!!"
 
-  utter_greet:
+  utter_saudar:
   - text: "Oi, como vc esta ?"
 
-  utter_cheer_up:
+  utter_alegrar:
   - text: "Here is something to cheer you up:"
     image: "https://i.imgur.com/nGF1K8f.jpg"
 
-  utter_did_that_help:
+  utter_isso_ajudou:
   - text: "Did that help you?"
 
-  utter_happy:
+  utter_feliz:
   - text: "Great, carry on!"
 
-  utter_goodbye:
+  utter_adeus:
   - text: "Bye"
 
-  utter_iamabot:
+  utter_eusourobo:
   - text: "I am a bot, powered by Rasa."
+
+  utter_boss_apresenta:
+  - text: "A BOSS é uma iniciativa legal"
+  - text: "A BOSS apresenta software livre para mulheres maravilhosas"
+
+  utter_talk_like_a_boss:
+  - text: "A Talk like a boss é uma série de entrevistas com mulheres incriveis"
 
 session_config:
   session_expiration_time: 60
