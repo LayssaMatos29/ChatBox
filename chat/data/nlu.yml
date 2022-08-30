@@ -24,7 +24,7 @@ nlu:
     - boa noite
     - boa tarde
 
-- intent: Adeus
+- intent: adeus
   examples: |
     - bom por
     - te encontro mais tarde

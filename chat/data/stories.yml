@@ -29,7 +29,7 @@ stories:
   - action: utter_alegrar
   - action: utter_isso_ajudou
   - intent: negar
-  - action: utter_goodbye
+  - action: utter_adeus
 
 - story: falar da boss
   steps:

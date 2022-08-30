@@ -1,0 +1,22 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"adeus\"}}]": "utter_adeus",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"adeus\"}}, {\"prev_action\": {\"action_name\": \"utter_adeus\"}, \"user\": {\"intent\": \"adeus\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"desafio_do_bot\"}}]": "utter_eusourobo",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"desafio_do_bot\"}}, {\"prev_action\": {\"action_name\": \"utter_eusourobo\"}, \"user\": {\"intent\": \"desafio_do_bot\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"adeus\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"adeus\"}}, {\"prev_action\": {\"action_name\": \"utter_adeus\"}, \"user\": {\"intent\": \"adeus\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"desafio_do_bot\"}}, {\"prev_action\": {\"action_name\": \"utter_eusourobo\"}, \"user\": {\"intent\": \"desafio_do_bot\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"desafio_do_bot\"}}]",
+      "predicting default action with intent restart",
+      "predicting default action with intent session_start",
+      "predicting default action with intent back"
+    ]
+  }
+}
